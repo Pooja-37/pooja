@@ -1,0 +1,36 @@
+#include <AT89S52.h>
+#define RED P2_1
+#define GREEN P2_2
+#define BLUE P2_4
+
+void delay(int);
+void main(){
+RED=0;
+GREEN=0;
+BLUE=0;
+
+while(1){
+RED=1;
+GREEN=0;
+BLUE=0;
+delay(100);
+GREEN=1;
+RED=0;
+BLUE=0;
+delay(100);
+BLUE=1;
+GREEN=0;
+RED=0;
+delay(100);
+}
+}
+void delay(int time)
+{
+int i,j;
+for( i=0;i<time;i++){
+for(j=0;j<1275;j++)
+{
+
+}
+}
+}
